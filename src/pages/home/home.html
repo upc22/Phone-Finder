@@ -12,8 +12,9 @@
 
 <ion-content padding>
     <div class="container">
-        <ion-list>
-            <form [formGroup]="userForm" (ngSubmit)="startService()">
+        <form [formGroup]="userForm" (ngSubmit)="startService()">
+
+            <ion-list>
                 <ion-item>
                     <ion-label for="code" text-capitalize floating>enter unique code</ion-label>
                     <ion-input type="text" name="code" formControlName="code"></ion-input>
@@ -32,9 +33,10 @@
                 </ion-item>
 
                 <button ion-button type="submit" color="secondary" block>Start Service</button>
-            </form>
 
-        </ion-list>
+
+            </ion-list>
+        </form>
     </div>
 
 

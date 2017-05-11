@@ -1,6 +1,7 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/v2/theming/
 $font-path: "../assets/fonts";
+$background-url:"../assets/imgs/background.jpg";
 // take the red pill
 $red-background: #fff6f6;
 $red-background-url:"../assets/imgs/background.jpg";
@@ -8,7 +9,6 @@ $red-light: #ffa99c;
 $red-dark: #74000e;
 // take the blue pill
 $blue-background: #f6f6ff;
-$blue-background-url:"../assets/imgs/background.jpg";
 $blue-light: #53e1ff;
 $blue-dark: #0034a7;
 @import "ionic.globals";
