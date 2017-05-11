@@ -1,0 +1,27 @@
+page-home {
+    ion-content {
+        background: url($blue-background-url) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .container {
+        width: 100%;
+    }
+    @media screen and (min-width: 480px) {
+        .container {
+            width: 60%;
+            border: 1px solid black;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .container {
+            width: 40%;
+            border: 1px solid black;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        .container {
+            width: 20%;
+            border: 1px solid black;
+        }
+    }
+}
