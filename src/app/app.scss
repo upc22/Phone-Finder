@@ -14,3 +14,7 @@
 // automatically applied to the <body> element in the app.
 @import "../theme/blue";
 @import "../theme/red";
+.page {
+    background: url($background-url) no-repeat center center fixed;
+    background-size: cover;
+}

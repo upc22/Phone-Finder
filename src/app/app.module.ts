@@ -6,6 +6,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { App } from './app.component';
 import { Home } from '../pages/home/home';
 import { FindPhone } from '../pages/find-phone/find-phone';
+import { Themes } from '../pages/themes/themes';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -14,7 +15,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     App,
     Home,
-    FindPhone
+    FindPhone,
+    Themes
   ],
   imports: [
     BrowserModule,ReactiveFormsModule,
@@ -24,7 +26,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     App,
     Home,
-    FindPhone
+    FindPhone,
+    Themes
   ],
   providers: [
     StatusBar,

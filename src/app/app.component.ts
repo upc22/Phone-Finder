@@ -4,6 +4,7 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { Home } from '../pages/home/home';
 import { FindPhone } from '../pages/find-phone/find-phone';
+import { Themes } from '../pages/themes/themes';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,7 +31,9 @@ export class App {
     // set our app's pages
     this.pages = [
       { title: 'Home', component: Home },
-      { title: 'Find Phone', component: FindPhone }
+      { title: 'Find Phone', component: FindPhone },
+      { title: 'Themes', component: Themes }
+      
     ];
   }
 
