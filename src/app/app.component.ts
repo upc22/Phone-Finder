@@ -1,10 +1,8 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 
-import { Platform, MenuController, Nav } from 'ionic-angular';
+import { Platform } from 'ionic-angular';
 
-import { Home } from '../pages/home/home';
-import { FindPhone } from '../pages/find-phone/find-phone';
-import { Themes } from '../pages/themes/themes';
+import { Tabs } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -14,27 +12,20 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   templateUrl: 'app.html'
 })
 export class App {
-  @ViewChild(Nav) nav: Nav;
+  
 
   // make HelloIonicPage the root (or first) page
-  rootPage = Home;
+  rootPage = Tabs;
   pages: Array<{title: string, component: any}>;
 
   constructor(
     public platform: Platform,
-    public menu: MenuController,
     public statusBar: StatusBar,
     public splashScreen: SplashScreen
   ) {
     this.initializeApp();
 
-    // set our app's pages
-    this.pages = [
-      { title: 'Home', component: Home },
-      { title: 'Find Phone', component: FindPhone },
-      { title: 'Themes', component: Themes }
-      
-    ];
+    
   }
 
   initializeApp() {
@@ -46,10 +37,5 @@ export class App {
     });
   }
 
-  openPage(page) {
-    // close the menu when clicking a link from the menu
-    this.menu.close();
-    // navigate to the new page if it is not the current page
-    this.nav.setRoot(page.component);
-  }
+ 
 }

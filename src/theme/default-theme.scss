@@ -1,0 +1,35 @@
+$background-url:"../assets/imgs/background.jpg";
+$tabs-ios-tab-text-color: grey;
+$tabs-ios-tab-text-color-active:green;
+$tabs-ios-tab-icon-color:grey;
+$tabs-ios-tab-icon-color-active:green;
+$tabs-md-tab-text-color: grey;
+$tabs-md-tab-text-color-active:green;
+$tabs-md-tab-icon-color:grey;
+$tabs-md-tab-icon-color-active:green;
+.default-theme {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .toolbar-title {
+        color: #fff;
+    }
+    .toolbar-background {
+        background-color: transparent;
+    }
+    .tabbar {
+        background-color: transparent;
+    }
+    ion-content {
+        background: url($background-url) no-repeat center center fixed;
+        background-size: cover;
+    }
+    ion-list {
+        .item {
+            background-color: transparent;
+        }
+    }
+}

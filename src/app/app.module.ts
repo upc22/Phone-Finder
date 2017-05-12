@@ -7,6 +7,7 @@ import { App } from './app.component';
 import { Home } from '../pages/home/home';
 import { FindPhone } from '../pages/find-phone/find-phone';
 import { Themes } from '../pages/themes/themes';
+import { Tabs } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -16,7 +17,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     App,
     Home,
     FindPhone,
-    Themes
+    Themes,
+    Tabs
   ],
   imports: [
     BrowserModule,ReactiveFormsModule,
@@ -27,7 +29,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     App,
     Home,
     FindPhone,
-    Themes
+    Themes,
+    Tabs
   ],
   providers: [
     StatusBar,
