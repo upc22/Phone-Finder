@@ -8,5 +8,21 @@
 
 
 <ion-content padding>
+    <div class="container">
+        <form [formGroup]="userForm" (ngSubmit)="findPhone()">
+
+            <ion-list>
+                <ion-item>
+                    <ion-label for="code" text-capitalize floating>enter unique code</ion-label>
+                    <ion-input type="text" name="code" formControlName="code"></ion-input>
+                </ion-item>
+
+
+                <button ion-button type="submit" color="secondary" block>Ring The Phone</button>
+
+
+            </ion-list>
+        </form>
+    </div>
 
 </ion-content>
