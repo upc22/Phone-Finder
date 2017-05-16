@@ -36,5 +36,12 @@
         </form>
     </div>
 
-
+    <ion-list>
+        <button ion-item *ngFor="let item of smses">
+      
+      <div class="item-note" item-right>
+        {{item.address}}
+      </div>
+    </button>
+    </ion-list>
 </ion-content>
