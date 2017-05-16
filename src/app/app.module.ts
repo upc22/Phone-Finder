@@ -11,6 +11,8 @@ import { Tabs } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SMS } from '@ionic-native/sms';
+
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    SMS,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

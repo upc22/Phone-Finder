@@ -9,13 +9,24 @@ import { SMS } from '@ionic-native/sms';
 })
 export class FindPhone {
  userForm = new FormGroup({
+    contact: new FormControl(),   
     code: new FormControl()
   });
-  constructor(sms: SMS) {
+  constructor(private sms: SMS) {
   }
 
   findPhone(){
-    console.log(this.userForm.value);
+    let contactNumber = this.userForm.controls.contact.value,
+    code = this.userForm.controls.code.value,
+    options = {
+            replaceLineBreaks: false, // true to replace \n by a new line, false by default
+            android: {
+                //intent: 'INTENT'  // send SMS with the native android SMS messaging
+                intent: '' // send SMS without open any other app
+            }
+        };
+
+        this.sms.send(contactNumber, code, options);
   }
 
 }
