@@ -23,7 +23,7 @@ import { SMS } from '@ionic-native/sms';
     Tabs
   ],
   imports: [
-    BrowserModule,ReactiveFormsModule,
+    BrowserModule, ReactiveFormsModule,
     IonicModule.forRoot(App),
   ],
   bootstrap: [IonicApp],

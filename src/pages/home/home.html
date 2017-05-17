@@ -37,10 +37,10 @@
     </div>
 
     <ion-list>
-        <button ion-item *ngFor="let item of smses">
+        <button ion-item *ngIf="smses">
       
       <div class="item-note" item-right>
-        {{item.address}}
+        hello
       </div>
     </button>
     </ion-list>

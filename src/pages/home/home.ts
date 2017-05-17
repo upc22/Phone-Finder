@@ -22,7 +22,8 @@ export class Home {
     if(window.SMS){
       window.SMS.listSMS({},
       data => {
-        this.smses = data;
+    this.smses = true;        
+        ///this.smses = data;
       },
       error => {
         console.log(error);
