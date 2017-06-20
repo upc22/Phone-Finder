@@ -9,7 +9,7 @@
 
 <ion-content padding>
     <div class="container">
-        <form [formGroup]="userForm" (ngSubmit)="startService()">
+        <form [formGroup]="userForm">
 
             <ion-list>
                 <ion-item>
@@ -29,7 +29,7 @@
                     </ion-range>
                 </ion-item>
 
-                <button ion-button type="submit" color="secondary" block>Start Service</button>
+                <button ion-button type="submit" color="secondary" block (click)="startService($event)">Start Service</button>
 
 
             </ion-list>
