@@ -1,0 +1,26 @@
+page-home {
+    .container {
+        width: 100%;
+        box-sizing: border-box;
+        background: #fff;
+        padding: 16px 32px;
+        border: 1px solid;
+        border-radius: 8px;
+        box-shadow: 5px 5px 5px #888888;
+    }
+    @media screen and (min-width: 480px) {
+        .container {
+            width: 60%;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .container {
+            width: 40%;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        .container {
+            width: 20%;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Find Phone</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="container">
+        <form [formGroup]="userForm" (ngSubmit)="findPhone()">
+
+            <ion-list>
+                <ion-item>
+                    <ion-label for="contact" text-capitalize floating>enter phone nnumber</ion-label>
+                    <ion-input type="number" name="contact" formControlName="contact"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label for="code" text-capitalize floating>enter unique code</ion-label>
+                    <ion-input type="text" name="code" formControlName="code"></ion-input>
+                </ion-item>
+
+                <button ion-button type="submit" color="secondary" block>Ring The Phone</button>
+
+
+            </ion-list>
+        </form>
+    </div>
+
+</ion-content>

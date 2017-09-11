@@ -1,0 +1,47 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Home</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="container">
+        <form [formGroup]="userForm">
+
+            <ion-list>
+                <ion-item>
+                    <ion-label for="code" text-capitalize floating>enter unique code</ion-label>
+                    <ion-input type="text" name="code" formControlName="code"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-range color="secondary" pin="true" formControlName="volume">
+                        <ion-icon range-left name="volume-down"></ion-icon>
+                        <ion-icon range-right name="volume-up"></ion-icon>
+                    </ion-range>
+                </ion-item>
+                <ion-item>
+                    <ion-range color="secondary" min="5" max="60" pin="true" formControlName="duration">
+                        <ion-label range-left>5</ion-label>
+                        <ion-label range-right>60</ion-label>
+                    </ion-range>
+                </ion-item>
+
+                <button ion-button type="submit" color="secondary" block (click)="startService($event)">Start Service</button>
+
+
+            </ion-list>
+        </form>
+    </div>
+
+    <ion-list>
+        <button ion-item *ngIf="smses">
+      
+      <div class="item-note" item-right>
+        hello
+      </div>
+    </button>
+    </ion-list>
+</ion-content>
